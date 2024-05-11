@@ -1,0 +1,249 @@
+body {
+    background: url(../img/banner/beij.jpg);
+    font-family: "宋体";
+}
+
+#page {
+    width: 960px;
+    margin: 0 auto; /*横向居中*/
+    background: #000000;
+    padding: 10px; /*内边距*/
+}
+
+
+.imgBox img {
+    width: 960px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.img1 {
+    display: block;
+}
+
+.img2 {
+    display: none;
+}
+
+.img3 {
+    display: none;
+}
+
+.img4 {
+    display: none;
+}
+
+.img5 {
+    display: none;
+}
+
+.img6 {
+    display: none;
+}
+
+.img7 {
+    display: none;
+}
+
+.r_page {
+    width: 780px;
+    height: 560px;
+    float: right;
+    background: url(../img/banner/bj.jpg);
+    padding: 10px 10px 50px;
+}
+
+.jianjie {
+    width: 780px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.in {
+    float: right;
+    width: 40%;
+    height: 600px;
+    border-style: dotted; /*边框点状*/
+    border-width: 1px;
+    border-color: #996633;
+    line-height: 25px;
+}
+
+.in:hover {
+    /*border: 1px red solid;*/
+}
+
+.in strong {
+    width: 310px;
+    height: 24px;
+    line-height: 24px;
+    background: #D3D3D3;
+    display: block; /*块级元素*/
+    border-color: #996633;
+    border-style: dotted;
+    border-width: 1px;
+}
+
+.in strong:hover {
+    /*border: 1px red solid;*/
+}
+
+.in a {
+    color: #0072E3;
+    text-decoration: none;
+}
+
+.in a:hover {
+    color: #00DB00;
+}
+
+.in img {
+    width: 180px;
+    height: 170px;
+}
+
+.guanyu {
+    position: relative;
+    float: right;
+    width: 60%;
+    right: 317px;
+    bottom: 268px;
+    /*border-style: dotted;*/
+    /*border-width: 1px;*/
+    /*border-color: #996633;*/
+}
+
+.guanyu:hover {
+    /*border: 1px red solid;*/
+}
+
+.guanyu strong {
+    width: 465px;
+    /*height: 24px;*/
+    line-height: 24px;
+    background: #D3D3D3;
+    margin-top: 24px;
+    display: block;
+    border-color: #996633;
+    border-style: dotted;
+    border-width: 1px;
+}
+
+.guanyu strong:hover {
+    /*border: 1px red solid;*/
+}
+
+.guanyu table {
+    display: block;
+    margin-top: 2px;
+}
+
+.guanyu table tr td {
+    border-color: #996633;
+    border-style: dotted;
+    border-width: 1px;
+}
+
+.guanyu table tr td:hover {
+    /*border: 1px red solid;*/
+}
+
+.guanyu a {
+    color: #0072E3;
+    text-decoration: none;
+}
+
+.guanyu a:hover {
+    color: red;
+}
+
+.toux {
+    position: relative; /*规定元素的定位类型；相对定位*/
+    width: 465px;
+    text-align: center;
+    border-color: #996633;
+    line-height: 300px;
+    /*border-style: dotted;*/
+    /*border-width: 1px;*/
+}
+
+.toux:hover {
+    /*border: 1px red solid;*/
+}
+
+.toux strong {
+    text-align: left;
+    width: 464px;
+    height: 24px;
+    line-height: 24px;
+    background: #D3D3D3;
+    border-color: #996633;
+    display: block;
+    border-style: dotted;
+    border-width: 1px;
+}
+
+.toux strong:hover {
+    /*border: 1px red solid;*/
+}
+
+.toux img {
+    width: 300px;
+    height: 250px;
+    vertical-align: middle; /*垂直对齐方式；父元素的中部*/
+}
+
+
+.l_page {
+    width: 160px;
+    float: right;
+}
+
+.l_page ul {
+    width: 160px;
+    float: right;
+}
+
+.l_page ul .one {
+    margin-top: 0px; /*上内边距*/
+}
+
+.l_page ul li {
+    width: 150px;
+    height: 50px;
+    display: block;
+    border-style: dotted;
+    border-width: 1px;
+    line-height: 44px;
+    font-size: 16px;
+    border-color: #996633;
+    font-weight: bold;
+    background: url(../img/nav_bg.gif) no-repeat /*背景图像将仅显示一次*/;
+    margin-top: 20px;
+}
+
+.l_page ul li:hover {
+    border: 1px #996633 solid;
+}
+
+.l_page ul li a {
+    color: #996633;
+    text-decoration: none;
+}
+
+#p1 {
+    color: #00FFFF;
+}
+
+.clearit {
+    clear: both;
+}
+
+.foot {
+    padding-top: 50px;
+}
+
+.foot p {
+    text-align: center;
+    line-height: 30px;
+}

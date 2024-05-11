@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>博客设计说明</title>
+		<link rel="stylesheet" type="text/css" href="css/sheji.css">
+	</head>
+
+	<body>
+		<script type="text/javascript" src="js/index.js"></script>
+		<center>
+			<div id="page">
+				<div class="imgBox">
+					<img class="img-slide img1" src="img/sheji/sheji.jpg">
+					<img class="img-slide img2" src="img/sheji/sheji1.jpg">
+					<img class="img-slide img3" src="img/sheji/sheji2.jpg">
+					<img class="img-slide img4" src="img/sheji/sheji3.jpg">
+				</div>
+
+				<div class="r_page">
+
+					<p>1.相册图片无法按照预期排满一行，解决方法：</p>
+					<p>&nbsp;&nbsp;display:inline使段落生出行内框</p>
+					<p>2.div边框没有实现虚线化，解决方法：</p>
+					<p>&nbsp;&nbsp;border-style:dotted设置边框样式为虚线</p>
+					<p>3.背景图片像素过小，无法满足需要，解决方法：</p>
+					<p>&nbsp;&nbsp;photoshop调整背景图片像素问题</p>
+					<p>4.音频在Chrome无法自动播放，解决方法：</p>
+					<p>&nbsp;&nbsp;(1)在查看网站信息中设置声音为允许状态</p>
+					<p>&nbsp;&nbsp;(2)在audio(引入音频的标签)中设置preload(静音)</p>
+					<p>&nbsp;&nbsp;(3)在网页运行时找到播放器打开声音</p>
+					<p>5.在制作各类网页时，碰到div不受调整，解决方法：</p>
+					<p>&nbsp;&nbsp;清除浮动clear:both</p>
+					<p>6.部分图片在css中无法移动到指定地点，解决方法：</p>
+					<p>&nbsp;&nbsp;在HTML对应标签中调整</p>
+					<p>7.无法让多个子div共同占满父容器，解决方法：</p>
+					<p>&nbsp;&nbsp;在css中设置position属性，用top、bottom等代码进行调整</p>
+					<p>8.无法将表格内边框线换成虚线,解决方法:</p>
+					<p>&nbsp;&nbsp;对应表格css中设置border-style:dotted;（设置虚线）border-width:1px;（虚线粗细）</p>
+					<p>9.在p标签中无法完整让最后一行文字居左，解决方法：</p>
+					<p>&nbsp;&nbsp;在对应css元素中设置text-align-last:left;</p>
+					<p>10.在制作轮播图时，出现多张图片占满屏幕,解决方法:</p>
+					<p>&nbsp;&nbsp;关闭浏览器和Hbuider,多次重新启动</p>
+					<p>11.登录注册输入框提示字符无法在正确位置显示,解决方法:</p>
+					<p>&nbsp;&nbsp;使用position绝对定位,在父元素tr中使用相对定位</p>
+					<p>12.使用lable for标签属性时,会被其他标签影响而失去作用,解决方法:</p>
+					<p>&nbsp;&nbsp;忽视其他标签,只将文字包裹在lable标签内即可</p>
+					<p>13.响应被提交,服务器转发时,提示404,500等,可能是覆盖post或get时被super版本的原始方法,解决方法:</p>
+					<p>&nbsp;&nbsp;将super.doGet(request, response)去除</p>
+					<p>14.重定向转发jsp乱码,使用response.setContentType("text/html;charset=UTF-8")也未解决,解决方法:</p>
+					<p>&nbsp;&nbsp;在jsp的page声明中加上pageEncoding="UTF-8"</p>
+					<p>15.页面进行缩放时,页面整体或部分布局发生变化,解决方法:</p>
+					<p>&nbsp;&nbsp;在对应css中设定min-width,视情况可设置max-width</p>
+					<p>16.js中登录注册时输入框在第一次失去焦点时没有提示报错字符,解决方法:</p>
+					<p>&nbsp;&nbsp;(1)在获得焦点时先去除原有的提示</p>
+					<p>&nbsp;&nbsp;(2)进行判断为空及其他情况</p>
+					<p>&nbsp;&nbsp;(3)再使用onfocus方法,当获得焦点时,将提示设置为空</p>
+					<p>&nbsp;&nbsp;(4)使用onblur事件,将焦点从某个元素移开时触发函数进行判断为空及其他情况</p>
+					<p>17.将DOM对象进行正则表达式判断时,忽略了对象和string的不同,出现了bug,解决方法:</p>
+					<p>&nbsp;&nbsp;将获取到的DOM对象转为value后再和正则表达式进行比对</p>
+					<p>18.servlet文件放入包中,而需要映射其WebServlet方法的jsp文件也在web下的一个文件夹中,导致action无法正常映射到WebServlet,解决方法:</p>
+					<p>&nbsp;&nbsp;可以使用相对路径../上一级的情况下进行映射,如:action="../addStudent"</p>
+					<p>19.jsp中使用下拉框标签时,<%%>中使用到了HashMap遍历,导致下拉列表顺序可能会因为哈希冲突和哈希表而变化,解决方法:</p>
+					<p>&nbsp;&nbsp;将HashMap改为使用LinkedHashMap,保证了顺序</p>
+					<p>20.使用JSP标准标签库jstl用于简化和替换jsp页面上的java代码时,使用HashMap存储数据,可能导致顺序问题,解决方法:</p>
+					<p>&nbsp;&nbsp;将HashMap改为使用LinkedHashMap,保证了顺序</p>
+					<p>21.当jsp中使用<%%>java来创建数组列表并循环来遍历集合时,所有信息都显示在同一行,解决方法:</p>
+					<p>&nbsp;&nbsp;将tr标签也放入循环内部,而不是放在<%%>java代码外</p>
+					<p>22.当输入中文在servlet中执行后,显示乱码的情况,解决方法:</p>
+					<p>&nbsp;&nbsp;视情况添加request(及response).setCharacterEncoding("UTF-8");或response.setContentType("text/html;charset=UTF-8");等等/p>
+					<p>23.,解决方法:</p>
+					<p>&nbsp;&nbsp;</p>
+				</div>
+
+				<div class="l_page">
+					<ul>
+						<li class="one">
+							<a href="index.html">我的首页</a>
+						</li>
+						<li>
+							<a href="photo.html">我的相册</a>
+						</li>
+						<li>
+							<a href="xingzuo.html">我的星座</a>
+						</li>
+						<li>
+							<a href="mingyan.html">名人名言</a>
+						</li>
+						<li>
+							<a href="mailto:1744434115@qq.com">联系我们</a>
+						</li>
+						<li>
+							<a href="register.html">更多请登陆注册</a>
+						</li>
+						<li>
+							<a href="administrator_jsp/main.jsp">超级管理员</a>
+						</li>
+						<li>
+							<a href="explain.html">网站设计说明</a>
+						</li>
+						<li>
+							<a href="wenjuan.html">问卷调查</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="clearit"></div>
+			<p id="p1"></p>
+			<div class="foot">
+				<ul align="right">
+					<audio src="music/music.mp3" autoplay controls loop></audio>
+				</ul>
+				<p>版权所有 禁止盗版</p>
+				<p>欢迎来到陈民华的博客</p>
+			</div>
+		</center>
+	</body>
+
+</html>

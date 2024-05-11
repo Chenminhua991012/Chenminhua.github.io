@@ -1,0 +1,126 @@
+body {
+    background: url(../img/sheji/bj.jpg);
+    font-family: "宋体";
+}
+
+.foot {
+    padding-top: 50px;
+    clear: both;
+}
+
+.foot p {
+    text-align: center;
+    line-height: 30px;
+}
+
+#page {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.head {
+    width: 960px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.imgBox {
+    width: 960px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.imgBox img {
+    width: 960px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.img1 {
+    display: block;
+}
+
+.img2 {
+    display: none;
+}
+
+.img3 {
+    display: none;
+}
+
+.img4 {
+    display: none;
+}
+
+.l_page {
+    position: relative;
+    width: 160px;
+    float: right;
+    right: 25px;
+}
+
+.l_page ul {
+    width: 160px;
+    float: right;
+    padding-top: 0px;
+}
+
+.l_page ul li {
+    width: 145px;
+    height: 50px;
+    display: block;
+    border-color: #996633;
+    border-style: dotted;
+    border-width: 1px;
+    line-height: 44px;
+    font-size: 16px;
+    font-weight: bold;
+    background: url(../img/nav_bg.gif);
+    margin-top: 20px;
+}
+
+.l_page ul li:hover {
+    border: 1px #996633 solid;
+}
+
+.l_page ul .one {
+    margin-top: 0px;
+}
+
+.l_page ul li a {
+    color: #996633;
+    text-decoration: none;
+}
+
+.right {
+    position: relative;
+    width: 50%;
+    float: right;
+    bottom: 870px;
+}
+
+.r_page {
+    position: relative;
+    text-align: left;
+    height: 870px;
+    border-style: dotted;
+    border-width: 1px;
+    top: 16px;
+    width: 780px;
+    float: right;
+    background: url(../img/sheji/beij.jpg);
+}
+
+.r_page:hover {
+    border: 1px #996633 solid;
+}
+
+.clearit {
+    clear: both;
+}
+
+.foot p {
+    position: relative;
+    text-align: center;
+    line-height: 30px;
+}

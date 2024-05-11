@@ -1,0 +1,218 @@
+/*:root伪类选择器代表文档树的根元素，对于HTML来说，是<html>元素。*/
+:root {
+    --header-height: 50px; /* 顶部栏高度 */
+    --footer-height: 50px; /* 底部栏高度 */
+    --nav-width: 200px; /* 导航栏宽度 */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    /*常用字体Arial无衬线字体（Sans-Serif）*/
+    font-family: Arial, sans-serif;
+    position: relative;
+    height: 100%; /* 确保<body>和<html>的高度为100% */
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    font: 700 16px "微软雅黑 Light";
+    height: var(--header-height); /* 顶部栏高度 */
+    width: 100%; /* 头部宽度为100% */
+    position: fixed; /* 固定定位，使头部顶到浏览器最上方 */
+    top: 0; /* 固定在顶部 */
+    left: 0; /* 固定在左侧 */
+    right: 0; /* 固定在右侧 */
+    display: flex; /* 使用 flexbox 布局 */
+    align-items: center; /* 垂直居中子元素 */
+    justify-content: center; /* 水平居中子元素 */
+    margin: 0; /* 消除默认的边距 */
+    padding: 0; /* 消除默认的填充 */
+    z-index: 100; /* 高层叠顺序，确保头部在最上层 */
+}
+
+.header h1 {
+    margin: 0; /* 消除默认的边距 */
+    padding: 0; /* 消除默认的填充 */
+    /* 不需要设置宽度和高度，因为它们将自动适应内容 */
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 0;
+    text-align: center;
+    /*height: var(--footer-height); !* 底部栏高度 *!*/
+    line-height: var(--footer-height); /* 底部栏高度 */
+    width: 100%; /* 底部栏宽度为100% */
+    position: fixed; /* 固定定位，使底部栏固定在视口底部 */
+    bottom: 0; /* 固定在底部 */
+    left: 0; /* 固定在左侧 */
+    right: 0; /* 固定在右侧 */
+    z-index: 100; /* 高层叠顺序，确保底部栏在最上层 */
+}
+
+.container {
+    position: absolute;
+    top: var(--header-height); /* 顶部栏的高度 */
+    bottom: var(--footer-height); /* 底部栏的高度 */
+    left: 0;
+    right: 0;
+    overflow: auto; /* 允许滚动 */
+}
+
+.nav-container {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: var(--nav-width); /* 侧边栏宽度 */
+    /*calc()函数动态计算元素高度,vh视口高度,100vh=100%浏览器窗口*/
+    height: calc(100vh - var(--header-height) - var(--footer-height)); /* 减去顶部栏和底部栏的高度 */
+    /*元素在垂直方向(y轴)上内容溢出行为,auto：当内容溢出时显示滚动条*/
+    overflow-y: auto;
+    text-align: center;
+    background-color: #fff;
+    /*向右偏移、不向下偏移、边缘模糊、颜色透明的黑色的阴影效果*/
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    /*左边距为200像素*/
+    margin-left: var(--nav-width);
+    padding: 20px;
+    background-color: #fff;
+    /*overflow-y: auto;*/
+    height: calc(100vh - var(--header-height) - var(--footer-height)); /* 减去顶部栏和底部栏的高度 */
+}
+
+/* 侧边栏样式 */
+.nav-container ul {
+    /*移除ul和ol前面的项目符号或数字*/
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-container ul li a {
+    display: block;
+    padding: 10px;
+    /*移除超链接下划线*/
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-container ul li a:hover {
+    background-color: #f2f2f2;
+}
+
+.content-header {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.content-header h2 {
+    color: #333;
+    margin: 0;
+    font-size: 24px;
+}
+
+.content-header p {
+    font-size: 14px;
+    color: #666;
+}
+
+.feature-blocks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.block {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: calc(33.33% - 10px); /* 三个区块宽度减去间隔 */
+}
+
+.block h3 {
+    color: #007bff;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.stats {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    width: 100%;
+    height: 300px; /* 根据需要调整高度 */
+    position: relative;
+    margin-top: 15px;
+}
+
+.notifications {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.notifications h3 {
+    color: #333;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.notifications ul {
+    list-style: none;
+    padding: 0;
+}
+
+.notifications li {
+    color: #333;
+    padding: 5px 0;
+}
+
+.site-footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.site-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}

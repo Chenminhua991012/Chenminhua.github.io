@@ -1,0 +1,295 @@
+body {
+    background: url(../img/register/beij.jpg);
+    font-family: "宋体", sans-serif;
+}
+
+#page {
+    width: 960px;
+    margin: 0 auto;
+    background: #000000;
+    padding: 10px
+}
+
+.head {
+    width: 960px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.in {
+    width: 130px;
+    height: 16px;
+    border: solid 1px #79abea;
+}
+
+.imgBox {
+    width: 960px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.imgBox img {
+    width: 960px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.img1 {
+    display: block;
+}
+
+.img2 {
+    display: none;
+}
+
+.img3 {
+    display: none;
+}
+
+.img4 {
+    display: none;
+}
+
+.r_page {
+    width: 780px;
+    float: right;
+    background: url(../img/bg1.png);
+    padding: 10px 10px 0;
+}
+
+.r_page h5 {
+    font-size: 18px;
+    font-weight: bold;
+    border-color: #996633;
+    border-style: dotted;
+    border-width: 1px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 30px;
+    width: 780px;
+    height: 30px;
+    background: #000000;
+    margin-top: 10px;
+}
+
+.r_page h5:hover {
+    border: 1px red solid;
+}
+
+.jingjian {
+    width: 780px;
+    /*margin: 0 45px;*/
+    text-align: left;
+    /*border-style: dotted;*/
+    /*border-width: 1px;*/
+    /*border-color: #996633;*/
+    font-size: 14px;
+}
+
+/*.jingjian:hover {*/
+/*	border: 1px #2894FF solid;*/
+/*}*/
+
+.main {
+    width: 525px;
+    margin-left: 180px;
+    /*margin-right: auto;*/
+    margin-top: 10px;
+}
+
+.left {
+    text-align: right;
+    width: 80px;
+    height: 35px;
+    font-size: 12px;
+}
+
+.center {
+    display: inline-block;
+    position: relative;
+    top: 7px;
+    width: 144px;
+}
+
+/* 设置label的显示样式为块级元素，以便进行垂直居中 */
+td.center label {
+    display: inline-block;
+    position: relative; /* 设置相对定位 */
+    line-height: 1.4; /* 根据实际情况调整，确保文本垂直居中 */
+}
+
+table tr:nth-child(5) label {
+    padding-left: 20px; /* 添加左内边距，为单选框留出空间 */
+}
+
+table tr:nth-child(5) .left {
+    height: 30px;
+}
+
+table tr:nth-child(6) .center {
+    display: table-caption;
+    min-width: 175px;
+    top: 8px;
+}
+
+table tr:nth-child(6) .left {
+    height: 55px !important;
+}
+
+table tr:nth-child(10) .center {
+    right: 16px;
+}
+
+table tr {
+    position: relative;
+}
+
+td span {
+    min-width: 310px;
+    position: absolute;
+    left: 225px;
+    top: 10px;
+}
+
+/* 绝对定位单选框，使其与文本对齐 */
+td.center input[type="radio"] {
+    position: absolute;
+    left: 0;
+    top: 6px; /* 垂直居中 */
+    transform: translateY(-50%); /* 垂直居中 */
+}
+
+/* 设置勾选框的样式 */
+td.center input[type="checkbox"] {
+    /*vertical-align: middle; !* 确保勾选框垂直居中 *!*/
+    margin-right: 6px;
+    width: 14px;
+}
+
+tr td:nth-child(3) {
+    font-size: 12px;
+}
+
+/* 验证码容器样式 */
+.validate-code-container {
+    display: flex; /* 使用Flexbox布局 */
+    /*align-items: center; !* 垂直居中对齐 *!*/
+}
+
+/* 验证码输入框样式 */
+.center input[name="validateCode"] {
+    width: 100px; /* 根据需要调整宽度 */
+    height: 16px;
+    border: solid 1px #79abea; /* 根据需要调整边框样式 */
+    margin-right: 10px; /* 与图片的间距 */
+}
+
+/* 验证码图片样式 */
+.validate-code-img {
+    cursor: pointer; /* 鼠标悬停时显示手形光标 */
+    /*vertical-align: middle; !* 与文本垂直居中 *!*/
+    margin-top: -3px;
+    margin-left: 5px; /* 与输入框的间距 */
+    filter: grayscale(75%); /* 为图片添加灰色滤镜，可根据需要调整 */
+}
+
+/* 鼠标悬停时改变验证码图片样式 */
+.validate-code-img:hover {
+    filter: none; /* 移除灰色滤镜 */
+    border: 1px solid #79abea; /* 添加边框 */
+}
+
+/* 按钮基础样式 */
+.center input[type="button"],
+.center input[type="submit"],
+.center input[type="reset"] {
+    padding: 5px 15px; /* 按钮内边距 */
+    margin: 5px; /* 按钮外边距 */
+    border: none; /* 去除默认边框 */
+    border-radius: 5px; /* 圆角边框 */
+    color: #fff; /* 文字颜色 */
+    font-size: 14px; /* 字体大小 */
+    font-weight: bold; /* 字体加粗 */
+    background-color: #007bff; /* 按钮背景颜色 */
+    cursor: pointer; /* 鼠标悬停时显示手形光标 */
+    transition: background-color 0.3s; /* 过渡动画 */
+}
+
+/* 按钮悬停样式 */
+.center input[type="button"]:hover,
+.center input[type="submit"]:hover,
+.center input[type="reset"]:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+}
+
+/* 按钮点击样式 */
+.center input[type="button"]:active,
+.center input[type="reset"]:active,
+.center input[type="submit"]:active,
+.login-link:active {
+    background-color: #004080; /* 鼠标点击时的背景颜色 */
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); /* 点击时的阴影效果 */
+}
+
+.login-link {
+    margin-left: -8px;
+}
+
+.login-link:hover {
+    background-color: #faf000; /* 鼠标悬停时的背景颜色 */
+}
+
+.l_page {
+    width: 160px;
+    float: right;
+}
+
+.l_page ul {
+    width: 160px;
+    float: right;
+    padding-top: 0px;
+}
+
+.l_page ul li {
+    width: 150px;
+    height: 50px;
+    display: block;
+    border-style: dotted;
+    border-width: 1px;
+    line-height: 44px;
+    color: #996633;
+    font-weight: bold;
+    background: url(../img/nav_bg.gif) no-repeat;
+    margin-top: 20px;
+}
+
+.l_page ul li:hover {
+    border: 1px #996633 solid;
+}
+
+.l_page ul .one {
+    margin-top: 0px;
+}
+
+.l_page ul li a {
+    color: #996633;
+    text-decoration: none;
+}
+
+.l_page ul li a:hover {
+    color: #996633;
+}
+
+.foot {
+    padding-top: 50px;
+}
+
+.foot p {
+    color: azure;
+    text-align: center;
+    line-height: 30px;
+}
+
+.clearit {
+    clear: both;
+}

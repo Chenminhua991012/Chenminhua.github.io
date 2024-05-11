@@ -1,0 +1,105 @@
+body {
+    background: url(../img/jiegou/beij.jpg);
+    font-family: "宋体";
+}
+
+#page {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.imgBox {
+    width: 960px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.imgBox img {
+    width: 960px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.img1 {
+    display: block;
+}
+
+.img2 {
+    display: none;
+}
+
+.img3 {
+    display: none;
+}
+
+.img4 {
+    display: none;
+}
+
+.r_page {
+    position: relative;
+    text-align: left;
+    border-style: dotted;
+    border-width: 1px;
+    top: 16px;
+    width: 780px;
+    float: right;
+    background: url(../img/jiegou/bj.jpg);
+}
+
+.r_page:hover {
+    border: 1px #996633 solid;
+}
+
+.l_page {
+    position: relative;
+    float: left;
+    bottom: 1125px;
+    right: 40px;
+}
+
+.l_page ul .one {
+    margin-top: 0px;
+}
+
+.l_page ul li {
+    width: 145px;
+    height: 50px;
+    display: block;
+    border-color: #996633;
+    border-style: dotted;
+    border-width: 1px;
+    line-height: 44px;
+    font-size: 16px;
+    font-weight: bold;
+    background: url(../img/nav_bg.gif);
+    margin-top: 20px;
+}
+
+.l_page ul li:hover {
+    border: 1px #996633 solid;
+}
+
+
+.l_page ul li a {
+    color: #996633;
+    text-decoration: none;
+}
+
+
+.clearit {
+    clear: both;
+}
+
+.foot {
+    padding-top: 50px;
+    clear: both;
+}
+
+.foot p {
+    position: relative;
+    bottom: 550px;
+    text-align: center;
+    color: #00FFFF;
+    line-height: 30px;
+}

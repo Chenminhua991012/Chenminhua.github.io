@@ -1,0 +1,79 @@
+body {
+    background: url(../../img/zuoping/jys.jpg);
+}
+
+
+#page {
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+.l_page {
+    position: relative;
+    float: left;
+    bottom: 870px;
+    right: 43px;
+}
+
+.l_page ul li {
+    width: 145px;
+    height: 50px;
+    display: block;
+    border-color: #996633;
+    border-style: dotted;
+    border-width: 1.5px;
+    line-height: 44px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.l_page ul li:hover {
+    border: 2px #996633 solid;
+}
+
+.l_page ul .one {
+    margin-top: 0px;
+}
+
+.l_page ul li a {
+    color: #996633;
+    text-decoration: none;
+}
+
+.r_page {
+    position: relative;
+    text-align: left;
+    height: 870px;
+    border-style: dotted;
+    border-width: 1px;
+    top: 16px;
+    width: 780px;
+    float: right;
+    background: url(../../img/zuoping/jys1.jpg);
+}
+
+.r_page:hover {
+    border: 1px #996633 solid;
+}
+
+.r_page video {
+    width: 600px;
+    height: 800px;
+    display: block;
+    margin: auto;
+}
+
+.foot {
+    padding-top: 50px;
+    clear: both;
+}
+
+.foot p {
+    position: relative;
+    bottom: 550px;
+    color: #00FFFF;
+    text-align: center;
+    line-height: 30px;
+}

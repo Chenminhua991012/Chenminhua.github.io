@@ -1,0 +1,185 @@
+body {
+    background: url(../img/wenjuan/wenjuan.png);
+    font-family: "宋体";
+    size: 10px;
+}
+
+#page {
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px
+}
+
+.head {
+    width: 960px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.imgBox {
+    width: 960px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.imgBox img {
+    width: 960px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.img1 {
+    display: block;
+}
+
+.img2 {
+    display: none;
+}
+
+.img3 {
+    display: none;
+}
+
+.img4 {
+    display: none;
+}
+
+.r_page {
+    width: 780px;
+    float: right;
+    background: url(../img/wenjuan/bj.jpg);
+    padding: 10px 10px 50px;
+}
+
+.r_page h5 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    line-height: 30px;
+    width: 780px;
+    height: 30px;
+    background: #000000;
+    margin-top: 10px;
+}
+
+.l_page {
+    width: 160px;
+    float: right;
+}
+
+.l_page ul {
+    width: 160px;
+    float: right;
+    padding-top: 0px;
+}
+
+.l_page ul li {
+    width: 150px;
+    height: 50px;
+    border-style: dotted;
+    border-width: 1px;
+    display: block;
+    line-height: 44px;
+    font-size: 16px;
+    color: #996633;
+    font-weight: bold; /*定义粗体字符*/
+    background: url(../img/nav_bg.gif) no-repeat;
+    margin-top: 20px;
+}
+
+.l_page ul li:hover {
+    border: 1px #996633 solid;
+}
+
+.l_page ul .one {
+    margin-top: 0px;
+}
+
+.l_page ul li a {
+    color: #996633;
+    text-decoration: none;
+}
+
+.l_page ul li a:hover {
+    color: #996633;
+}
+
+.wenjuan {
+    padding: 16px 24px;
+    border-style: dotted;
+    border-width: 1px;
+    border-color: #00DB00;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+
+.content ul {
+    overflow: hidden;
+    margin-top: 30px;
+    list-style: none;
+}
+
+.content li {
+    height: 35px;
+}
+
+option {
+    background: #fff1f1;
+}
+
+.content_other textarea {
+    resize: none; /*是否可由用户调整元素的尺寸*/
+    width: 98%;
+    height: 150px;
+    margin-top: 32px;
+    line-height: 32px;
+}
+
+.an {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+/* 按钮基础样式 */
+#btn {
+    padding: 5px 15px; /* 按钮内边距 */
+    margin: 5px; /* 按钮外边距 */
+    border: none; /* 去除默认边框 */
+    border-radius: 5px; /* 圆角边框 */
+    color: #fff; /* 文字颜色 */
+    font-size: 14px; /* 字体大小 */
+    font-weight: bold; /* 字体加粗 */
+    background-color: #007bff; /* 按钮背景颜色 */
+    cursor: pointer; /* 鼠标悬停时显示手形光标 */
+    transition: background-color 0.3s; /* 过渡动画 */
+}
+
+/* 按钮悬停样式 */
+#btn:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+}
+
+/* 按钮点击样式 */
+#btn:active {
+    background-color: #004080; /* 鼠标点击时的背景颜色 */
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); /* 点击时的阴影效果 */
+}
+
+.clearit {
+    clear: both;
+}
+
+.foot {
+    padding-top: 50px;
+}
+
+.foot p {
+    text-align: center;
+    line-height: 30px;
+}

@@ -1,0 +1,136 @@
+body {
+    /*background-color: #f4f4f4;*/
+    margin: 0;
+    padding: 0;
+}
+
+.add_container {
+    max-width: 900px;
+    min-width: 900px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    /*margin: 150px 410px;*/
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    /*color: #333;*/
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    min-width: 70px;
+    text-align: right;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    min-width: 70px;
+    max-width: 240px;
+}
+
+td span {
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -webkit-box;
+    margin-left: -12px;
+    min-width: 500px;
+    max-width: 500px;
+}
+
+/*tr td:last-child span {*/
+/*    float: left;*/
+/*    border-bottom: none;*/
+/*    text-align: center;*/
+/*}*/
+
+tr:nth-child(5) {
+    height: 68px;
+}
+
+tr:nth-child(5) label:first-child,
+tr:nth-child(5) label:last-child {
+    margin-left: 20px;
+}
+
+tr .center {
+    position: relative;
+}
+
+/* 绝对定位单选框，使其与文本对齐 */
+td.center label:first-child input[type="radio"] {
+    position: absolute;
+    left: 9px;
+    top: 32px;
+    transform: translateY(-50%);
+}
+
+td.center label:last-child input[type="radio"] {
+    position: absolute;
+    left: 52px;
+    top: 32px; /* 垂直居中 */
+    transform: translateY(-50%); /* 垂直居中 */
+}
+
+/* 设置勾选框的样式 */
+td.center input[type="checkbox"] {
+    vertical-align: middle; /* 确保勾选框垂直居中 */
+    margin-right: 2px;
+    width: 14px;
+}
+
+tr:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(6) {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+tr:nth-child(6) .center {
+    /*min-width: 282px;*/
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+input[type="text"], input[type="number"], input[type="email"], input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #4cae4c;
+}
+
+input[type="reset"] {
+    float: right;
+}
