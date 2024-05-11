@@ -1,5 +1,5 @@
 body {
-    background: url(../img/mingyan/beij.jpg);
+    background: url(http://chenminhua.kesug.com/img/mingyan/beij.jpg);
     font-family: "宋体";
 }
 
@@ -47,7 +47,7 @@ body {
 .r_page {
     width: 780px;
     float: right;
-    background: url(../img/mingyan/mingyan1.jpg);
+    background: url(http://chenminhua.kesug.com/img/mingyan/mingyan1.jpg);
     padding: 10px 10px 50px;
 }
 
@@ -95,7 +95,7 @@ a:hover {
     line-height: 44px;
     border-color: #996633;
     font-weight: bold;
-    background: url(../img/nav_bg.gif) no-repeat;
+    background: url(http://chenminhua.kesug.com/img/nav_bg.gif) no-repeat;
     margin-top: 20px;
 }
 

@@ -1,5 +1,5 @@
 body {
-    background: url(../img/photo/beij.jpg);
+    background: url(http://chenminhua.kesug.com/img/photo/beij.jpg);
     font-family: "宋体";
 }
 
@@ -47,7 +47,7 @@ body {
 .r_page {
     width: 780px;
     float: right;
-    background: url(../img/photo/bj.jpg);
+    background: url(http://chenminhua.kesug.com/img/photo/bj.jpg);
     padding: 10px 10px 50px;
 }
 
@@ -98,7 +98,7 @@ body {
     line-height: 44px;
     border-color: #996633;
     font-weight: bold;
-    background: url(../img/nav_bg.gif) no-repeat;
+    background: url(http://chenminhua.kesug.com/img/nav_bg.gif) no-repeat;
     margin-top: 20px;
 }
 
