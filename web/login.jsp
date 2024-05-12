@@ -19,10 +19,10 @@
     <div id="page">
         <div class="head">
             <div class="imgBox">
-                <img class="img-slide img1" src="http://chenminhua.kesug.com/img/register/register1.jpg">
-                <img class="img-slide img2" src="http://chenminhua.kesug.com/img/register/register2.jpg">
-                <img class="img-slide img3" src="http://chenminhua.kesug.com/img/register/register3.jpg">
-                <img class="img-slide img4" src="http://chenminhua.kesug.com/img/register/register4.jpg">
+                <img class="img-slide img1" src="https://chenminhua.kesug.com/img/register/register1.jpg">
+                <img class="img-slide img2" src="https://chenminhua.kesug.com/img/register/register2.jpg">
+                <img class="img-slide img3" src="https://chenminhua.kesug.com/img/register/register3.jpg">
+                <img class="img-slide img4" src="https://chenminhua.kesug.com/img/register/register4.jpg">
             </div>
         </div>
         <div class="r_page">
@@ -117,7 +117,7 @@
         <p id="p1"></p>
     </div>
     <ul align="right">
-        <audio src="http://chenminhua.kesug.com/music/mingyan.mp3" autoplay controls loop></audio>
+        <audio src="https://chenminhua.kesug.com/music/mingyan.mp3" autoplay controls loop></audio>
     </ul>
     <div class="foot">
         <p>版权所有 禁止盗版</p>
