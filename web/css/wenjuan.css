@@ -1,5 +1,5 @@
 body {
-    background: url(http://chenminhua.kesug.com/img/wenjuan/wenjuan.png);
+    background: url(https://chenminhua.kesug.com/img/wenjuan/wenjuan.png);
     font-family: "宋体";
     size: 10px;
 }
@@ -47,7 +47,7 @@ body {
 .r_page {
     width: 780px;
     float: right;
-    background: url(http://chenminhua.kesug.com/img/wenjuan/bj.jpg);
+    background: url(https://chenminhua.kesug.com/img/wenjuan/bj.jpg);
     padding: 10px 10px 50px;
 }
 
@@ -84,7 +84,7 @@ body {
     font-size: 16px;
     color: #996633;
     font-weight: bold; /*定义粗体字符*/
-    background: url(http://chenminhua.kesug.com/img/nav_bg.gif) no-repeat;
+    background: url(https://chenminhua.kesug.com/img/nav_bg.gif) no-repeat;
     margin-top: 20px;
 }
 

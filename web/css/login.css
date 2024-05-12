@@ -1,5 +1,5 @@
 body {
-    background: url(http://chenminhua.kesug.com/img/register/beij.jpg);
+    background: url(https://chenminhua.kesug.com/img/register/beij.jpg);
     font-family: "宋体";
 }
 
@@ -49,7 +49,7 @@ body {
     width: 780px;
     height: 514px;
     float: right;
-    background: url(http://chenminhua.kesug.com/img/bg1.png);
+    background: url(https://chenminhua.kesug.com/img/bg1.png);
     padding: 10px 10px 50px;
     text-align: left;
 }
@@ -219,7 +219,7 @@ a:hover {
     line-height: 44px;
     border-color: #996633;
     font-weight: bold;
-    background: url(http://chenminhua.kesug.com/img/nav_bg.gif) no-repeat;
+    background: url(https://chenminhua.kesug.com/img/nav_bg.gif) no-repeat;
     margin-top: 20px;
 }
 
