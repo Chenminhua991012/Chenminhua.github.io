@@ -4,14 +4,47 @@
 	<head>
 
 		<meta charset="utf-8" />
-		<title>博客首页</title>
+		<title>博客首页</title>/* 添加到您的 <head> 中的 <style> 标签里，或者添加到外部的 CSS 文件中 */
+<style>
+			.maintenance-notice {
+    display: none; /* 初始不显示 */
+    position: fixed; /* 固定定位 */
+    top: 0; /* 定位到页面顶部 */
+    left: 0; /* 定位到页面左侧 */
+    right: 0; /* 定位到页面右侧 */
+    background-color: #fff; /* 提示框的背景颜色 */
+    padding: 10px; /* 内边距 */
+    text-align: center; /* 文本居中 */
+    border-bottom: 1px solid #ddd; /* 下边框 */
+    z-index: 1000; /* 确保提示框在最上层 */
+}
+
+/* 使用媒体查询来为 PC 端显示提示框 */
+@media screen and (min-width: 768px) {
+    .maintenance-notice {
+        display: block; /* 对于 PC 端，显示提示框 */
+    }
+}
+			</style>
 		<link rel="stylesheet" type="text/css" href="web/css/index.css">
+		<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth >= 768) { // 假设 PC 端的最小宽度为 768px
+        document.querySelector('.maintenance-notice').style.display = 'block';
+    }
+});
+		</script>
 	</head>
 
 	<body>
+		<!-- PC 端维护提示 -->
+<div class="maintenance-notice" style="display: none;">
+    <p>我们的网站目前正在进行维护。请稍后再试。</p >
 		<script type="text/javascript" src="web/js/index.js"></script>
-
+	
 		<center>
+			
+</div>
 			<div id="page">
 				<div class="imgBox">
 					<img class="img-slide img1" src="http://chenminhua.kesug.com/img/banner/banner.jpg" alt="">
