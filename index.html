@@ -9,14 +9,33 @@
 		<link rel="stylesheet" type="text/css" href="web/css/index.css">
 <style>
 		.maintenance-info {
-		position: absolute; 
-		/* 或者使用 absolute 或 fixed，取决于您的布局需求 */ 
-		background-color: blued; /* 背景颜色，可自定义 */ 
-		color: red; /* 文字颜色 */
-		padding: 10px; /* 内边距 */ 
-		text-align: center; /* 文本居中 */
-		width: 100%; /* 宽度 */
-		}
+    position: absolute; /* 使用绝对定位 */
+    top: 0; /* 定位到页面顶部 */
+    left: 0; /* 定位到页面左侧 */
+    width: 100%; /* 宽度设置为100%，以覆盖整个屏幕宽度 */
+    background-color: rgba(0, 0, 0, 0.5); /* 背景颜色，使用半透明黑色 */
+    color: #FFFFFF; /* 文字颜色为白色 */
+    padding: 20px; /* 内边距增加，以便在维护信息和边缘之间留出空间 */
+    text-align: center; /* 文本居中 */
+    font-size: 24px; /* 字体大小增大 */
+    font-weight: bold; /* 字体加粗 */
+    z-index: 1000; /* 确保层叠上下文中该层位于最上方 */
+}
+
+.maintenance-info p {
+    margin: 0; /* 移除默认的段落间距 */
+    animation: colorChange 5s infinite; /* 添加颜色变化动画 */
+}
+
+/* 文字颜色变化的动画 */
+@keyframes colorChange {
+    0% { color: #FFFFFF; } /* 开始时的白色 */
+    25% { color: #FF0000; } /* 25% 时间后的红色 */
+    50% { color: #00FF00; } /* 50% 时间后的绿色 */
+    75% { color: #0000FF; } /* 75% 时间后的蓝色 */
+    100% { color: #FFFFFF; } /* 结束时回到白色 */
+}
+
 	</style>
 	</head>
 
